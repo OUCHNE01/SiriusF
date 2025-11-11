@@ -152,9 +152,9 @@ const Footer = () => {
           </div>
 
           <div class="text-center">
-            © 2023 Copyright:
+            © 2025 Copyright:
             <a class="text-color-3" href="#">
-              freelancingspace.com
+              Lhoussain.com
             </a>
           </div>
         </footer>
