@@ -34,23 +34,16 @@ const ServiceDetailPage = () => {
       emailId: "",
       phoneNo: "",
       role: "",
-      address: {
-        id: "",
-        street: "",
-        city: "",
-        pincode: "",
-      },
+      address: "",
       walletAmount: "",
       status: "",
     },
+   service:{
     addedTime: "",
     minPrice: "",
     deliveryTime: "",
-    image1: "",
-    image2: "",
-    image3: "",
-    status: "",
-  });
+
+  }});
 
   const [serviceRequest, setServiceRequest] = useState({
     serviceId: serviceId,
@@ -62,7 +55,6 @@ const ServiceDetailPage = () => {
     setServiceRequest({ ...serviceRequest, [e.target.name]: e.target.value });
   };
 
-  const [selectedImage, setSelectImage] = useState(null);
 
   const [showModal, setShowModal] = useState(false);
 
@@ -212,13 +204,6 @@ const ServiceDetailPage = () => {
                 <div className="row g-0">
                   {/* Left side - Company Logo */}
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
-                    <ServiceCarousel
-                      item={{
-                        image1: service.image1,
-                        image2: service.image2,
-                        image3: service.image3,
-                      }}
-                    />
                   </div>
                   {/* Right side - Job Details */}
                   <div className="col-md-8">

@@ -69,9 +69,7 @@ const AddServiceForm = () => {
     formData.append("techExpertId", service.techExpertId);
     formData.append("minPrice", service.minPrice);
     formData.append("deliveryTime", service.deliveryTime);
-    formData.append("image1", selectedImage1);
-    formData.append("image2", selectedImage2);
-    formData.append("image3", selectedImage3);
+
 
     axios
       .post("http://localhost:8080/api/service/add", formData, {
@@ -238,47 +236,12 @@ const AddServiceForm = () => {
                     value={service.minPrice}
                   />
                 </div>
-
-                <div className="col-md-3 mb-3">
-                  <label for="formFile" class="form-label">
-                    <b> Select service Image 1</b>
-                  </label>
-                  <input
                     class="form-control"
                     type="file"
                     id="formFile"
-                    name="image1"
-                    onChange={(e) => setSelectImage1(e.target.files[0])}
-                    required
-                  />
-                </div>
-                <div className="col-md-3 mb-3">
-                  <label for="formFile" class="form-label">
-                    <b> Select service Image 2</b>
-                  </label>
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="formFile"
-                    name="image2"
                     onChange={(e) => setSelectImage2(e.target.files[0])}
                     required
                   />
-                </div>
-                <div className="col-md-3 mb-3">
-                  <label for="formFile" class="form-label">
-                    <b> Select service Image 3</b>
-                  </label>
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="formFile"
-                    name="image3"
-                    onChange={(e) => setSelectImage3(e.target.files[0])}
-                    required
-                  />
-                </div>
-
                 <div className="d-flex aligns-items-center justify-content-center mb-2">
                   <button
                     type="submit"

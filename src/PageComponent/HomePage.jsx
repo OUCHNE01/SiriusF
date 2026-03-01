@@ -4,7 +4,7 @@ import axios from "axios";
 import Carousel from "./Carousel";
 import Footer from "../NavbarComponent/Footer";
 import { useNavigate } from "react-router-dom";
-import ServiceCard from "../ServiceComponent/ServiceCard";
+
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -124,7 +124,7 @@ const HomePage = () => {
       <div className="col-md-12 mt-3 mb-5">
         <div className="row row-cols-1 row-cols-md-2 g-4">
           {services.map((service) => {
-            return <ServiceCard item={service} key={service.id} />;
+
           })}
         </div>
       </div>

@@ -32,7 +32,7 @@ const ServiceCarousel = (service) => {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src={"http://localhost:8080/api/service/" + service.item.image1}
+            src={"http://localhost:8080/api/service/" }
             class="d-block w-100"
             alt="..."
             style={{
@@ -42,7 +42,7 @@ const ServiceCarousel = (service) => {
         </div>
         <div class="carousel-item">
           <img
-            src={"http://localhost:8080/api/service/" + service.item.image2}
+            src={"http://localhost:8080/api/service/" }
             class="d-block w-100"
             alt="..."
             style={{
@@ -52,7 +52,7 @@ const ServiceCarousel = (service) => {
         </div>
         <div class="carousel-item">
           <img
-            src={"http://localhost:8080/api/service/" + service.item.image3}
+            src={"http://localhost:8080/api/service/" }
             class="d-block w-100"
             alt="..."
             style={{

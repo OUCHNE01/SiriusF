@@ -308,7 +308,7 @@ const MyWallet = () => {
             <h3>My Wallet</h3>
           </div>
           <h4 className="ms-3 text-color text-center">
-            Wallet Balance: &#8377; {walletAmount}
+            Wallet Balance:  &#x20AC; {walletAmount}
           </h4>
 
           <hr />

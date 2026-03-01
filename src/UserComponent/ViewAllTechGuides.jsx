@@ -153,11 +153,7 @@ const ViewAllTechGuides = () => {
                       </td>
                       <td>
                         <b>
-                          {user.address.street +
-                            ", " +
-                            user.address.city +
-                            ", " +
-                            user.address.pincode}
+                          {user.address}
                         </b>
                       </td>
 

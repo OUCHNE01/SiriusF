@@ -13,9 +13,7 @@ const UserRegister = () => {
     emailId: "",
     password: "",
     phoneNo: "",
-    street: "",
-    city: "",
-    pincode: "",
+    adresse:"",
     role: "",
   });
 
@@ -223,48 +221,6 @@ const UserRegister = () => {
                     value={user.phoneNo}
                   />
                 </div>
-
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="description" className="form-label">
-                    <b> Street</b>
-                  </label>
-                  <textarea
-                    className="form-control"
-                    id="street"
-                    name="street"
-                    rows="3"
-                    onChange={handleUserInput}
-                    value={user.street}
-                  />
-                </div>
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="price" className="form-label">
-                    <b>City</b>
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="city"
-                    name="city"
-                    onChange={handleUserInput}
-                    value={user.city}
-                  />
-                </div>
-
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="pincode" className="form-label">
-                    <b>Pincode</b>
-                  </label>
-                  <input
-                    type="number"
-                    className="form-control"
-                    id="pincode"
-                    name="pincode"
-                    onChange={handleUserInput}
-                    value={user.pincode}
-                  />
-                </div>
-
                 <div className="d-flex aligns-items-center justify-content-center">
                   <input
                     type="submit"

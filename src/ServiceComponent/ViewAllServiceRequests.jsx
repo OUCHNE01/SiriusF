@@ -26,7 +26,6 @@ const ViewAllServiceRequests = () => {
     {
       service: {
         name: "",
-        image1: "",
         category: "",
         subCategory: {
           name: "",
@@ -138,19 +137,7 @@ const ViewAllServiceRequests = () => {
                 {serviceRequests.map((request) => {
                   return (
                     <tr>
-                      <td>
-                        <img
-                          src={
-                            "http://localhost:8080/api/service/" +
-                            request.service.image1
-                          }
-                          class="img-fluid"
-                          alt="service_pic"
-                          style={{
-                            maxWidth: "90px",
-                          }}
-                        />
-                      </td>
+
                       <td>
                         <b>{request.service.name}</b>
                       </td>

@@ -13,12 +13,7 @@ const UserProfilePage = () => {
     emailId: "",
     phoneNo: "",
     role: "",
-    address: {
-      id: "",
-      street: "",
-      city: "",
-      pincode: "",
-    },
+    address: "",
     walletAmount: "",
     status: "",
   });
@@ -90,17 +85,13 @@ const UserProfilePage = () => {
                 </div>
                 <div className="col-md-4">
                   <p className="mb-2">
-                    <b>Address:</b>{" "}
-                    {user.address.street +
-                      ", " +
-                      user.address.city +
-                      ", " +
-                      user.address.pincode}
+                    <b>Address:</b>
+                    {user.address}
                   </p>
                 </div>
                 <div className="col-md-4">
                   <p className="mb-2">
-                    <b>Wallet Amount:</b> &#8377; {user.walletAmount}
+                    <b>Wallet Amount:</b> &#x20AC; {user.walletAmount}
                   </p>
                 </div>
               </div>

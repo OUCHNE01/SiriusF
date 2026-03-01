@@ -89,12 +89,7 @@ const ViewAllCustomers = () => {
                       </td>
                       <td>
                         <b>
-                          {employee.address.street +
-                            ", " +
-                            employee.address.city +
-                            ", " +
-                            employee.address.pincode}
-                        </b>
+                          {employee.address}</b>
                       </td>
                     </tr>
                   );

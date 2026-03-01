@@ -136,19 +136,7 @@ const ViewAllServices = () => {
                 {services.map((service) => {
                   return (
                     <tr>
-                      <td>
-                        <img
-                          src={
-                            "http://localhost:8080/api/service/" +
-                            service.image1
-                          }
-                          class="img-fluid"
-                          alt="service_pic"
-                          style={{
-                            maxWidth: "90px",
-                          }}
-                        />
-                      </td>
+
                       <td>
                         <b>{service.name}</b>
                       </td>

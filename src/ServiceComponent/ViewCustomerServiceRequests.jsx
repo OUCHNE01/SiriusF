@@ -24,7 +24,6 @@ const ViewCustomerServiceRequests = () => {
     {
       service: {
         name: "",
-        image1: "",
         category: "",
         subCategory: {
           name: "",
